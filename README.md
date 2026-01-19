@@ -10,17 +10,302 @@ All sensitive files and full production implementations are kept private in bolt
 
 📌 PROJECTS COVERED IN THIS PORTFOLIO
 
-The following three engineering projects are presented in detail below:
+The following engineering projects are presented in detail below:
 
-PROJECT 1 - Federal Multi-Enclave Insider-Threat & Anomaly Detection System
+PROJECT 1 – Global Banking P95/P99 Latency Optimization Platform
+(SLA-Driven Performance Engineering, Observability, Automation)
 
-PROJECT 2 - CSfC Network Operations Platform (Tier 2/3, PKI, STIG, IaC)
+PROJECT 2 - Federal Multi-Enclave Insider-Threat & Anomaly Detection System
 
-PROJECT 3 - Secure Healthcare Cloud Data Platform (IaC, Airflow, IAM, Data Governance)
+PROJECT 3 - CSfC Network Operations Platform (Tier 2/3, PKI, STIG, IaC)
+
+PROJECT 4 - Secure Healthcare Cloud Data Platform (IaC, Airflow, IAM, Data Governance)
 
 Each project demonstrates production-oriented design, security-first architecture, and disciplined automation practices.
 
-🔐 PROJECT 1 – FEDERAL MULTI-ENCLAVE INSIDER-THREAT & ANOMALY DETECTION SYSTEM
+PROJECT 1 – Global Banking P95/P99 Latency Optimization Platform
+(SLA-Driven Performance Engineering, Observability, Automation)
+
+📄 README.md
+# Bank Global Latency & Stability Platform
+
+Enterprise-grade platform for monitoring, analyzing, and automatically
+remediating global service latency and stability issues.
+
+## Key Capabilities
+- Distributed latency probes
+- SLA and percentile analysis (P95 / P99)
+- Automated detection and remediation workflows
+- Infrastructure as Code (Terraform)
+- Orchestrated pipelines (Airflow)
+- Local reproducible environments (Docker)
+
+This repository contains sanitized, representative samples suitable for
+public review. Full production implementations remain private.
+
+📄 PROJECT_SUMMARY.txt
+Project: Global Latency & Stability Platform
+
+Purpose:
+Detect, analyze, and respond to latency degradation across distributed systems.
+
+Core Components:
+- Terraform for infrastructure provisioning
+- Airflow for scheduled data pipelines
+- CI/CD workflows for validation
+- Shell scripts for operational control
+
+Design Principles:
+- Modularity
+- Automation-first
+- Reproducibility
+- Production-aligned architecture
+
+📄 QUICKSTART.md
+## Quick Start
+
+1. Validate environment
+   ./scripts/preflight.sh
+
+2. Start local platform
+   ./scripts/local_up.sh
+
+3. Access services
+   - Airflow UI: http://localhost:8080
+
+4. Run smoke tests
+   ./scripts/smoke_test.sh
+
+5. Stop platform
+   ./scripts/local_down.sh
+
+📂 terraform/main.tf
+terraform {
+  required_version = ">= 1.5.0"
+}
+
+provider "aws" {
+  region = var.aws_region
+}
+
+locals {
+  common_tags = {
+    Project = "Latency-Stability-Platform"
+    Managed = "Terraform"
+  }
+}
+
+module "network" {
+  source = "./modules/network"
+  vpc_id = var.vpc_id
+}
+
+📂 airflow/dags/latency_pipeline.py
+from airflow import DAG
+from airflow.operators.python import PythonOperator
+from datetime import datetime
+
+def compute_percentiles(**context):
+    pass
+
+def detect_sla_breach(**context):
+    pass
+
+def submit_change_request(**context):
+    pass
+
+with DAG(
+    dag_id="latency_pipeline",
+    schedule_interval="*/5 * * * *",
+    start_date=datetime(2024, 1, 1),
+    catchup=False,
+) as dag:
+
+    compute_task = PythonOperator(
+        task_id="compute_percentiles",
+        python_callable=compute_percentiles,
+        provide_context=True,
+    )
+
+    detect_task = PythonOperator(
+        task_id="detect_sla_breach",
+        python_callable=detect_sla_breach,
+        provide_context=True,
+    )
+
+    change_request_task = PythonOperator(
+        task_id="submit_change_request",
+        python_callable=submit_change_request,
+        provide_context=True,
+    )
+
+    compute_task >> detect_task >> change_request_task
+
+📄 docker-compose.yml
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+
+  airflow:
+    image: apache/airflow:2.7
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+
+📂 .github/workflows/ci.yml
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run smoke tests
+        run: ./scripts/smoke_test.sh
+
+📂 scripts/preflight.sh
+#!/usr/bin/env bash
+set -e
+
+command -v docker >/dev/null 2>&1 || exit 1
+command -v docker-compose >/dev/null 2>&1 || exit 1
+
+echo "✓ Environment validated"
+
+📂 scripts/smoke_test.sh
+#!/usr/bin/env bash
+set -e
+
+docker ps >/dev/null 2>&1
+
+echo "✓ Smoke tests passed"
+
+📂 scripts/local_up.sh
+#!/usr/bin/env bash
+set -e
+
+docker-compose up -d
+
+echo "✓ Platform started"
+
+📂 scripts/local_down.sh
+#!/usr/bin/env bash
+set -e
+
+docker-compose down
+
+echo "✓ Platform stopped"
+📂 ansible/inventory/dev.yml
+all:
+  hosts:
+    router1:
+      ansible_host: 192.0.2.10
+    router2:
+      ansible_host: 192.0.2.11
+
+📂 ansible/group_vars/dev.yml
+env: dev
+latency_threshold: 120
+qos_profile: gold
+
+network_segments:
+  - name: core
+    cidr: 10.0.0.0/16
+  - name: edge
+    cidr: 10.1.0.0/16
+📂 ansible/templates/deploy_report.json.j2
+{
+  "deployment": {
+    "environment": "{{ env }}",
+    "timestamp": "{{ ansible_date_time.iso8601 }}",
+    "status": "{{ deployment_status }}"
+  },
+  "network": {
+    "segments": {{ network_segments | to_json }},
+    "latency_threshold_ms": {{ latency_threshold }},
+    "qos_profile": "{{ qos_profile }}"
+  }
+}
+
+📂 ansible/roles/network_render/tasks/main.yml
+- name: Render network deployment report
+  template:
+    src: deploy_report.json.j2
+    dest: /tmp/deploy_report_{{ env }}.json
+
+📂 ansible/roles/network_deploy_mock/tasks/main.yml
+- name: Simulate network configuration deployment
+  debug:
+    msg: "Deploying network configuration to {{ inventory_hostname }}"
+
+- name: Apply latency threshold
+  debug:
+    msg: "Latency threshold set to {{ latency_threshold }} ms"
+
+📂 ansible/roles/validate/tasks/main.yml
+- name: Validate latency threshold
+  assert:
+    that:
+      - latency_threshold > 0
+      - latency_threshold < 500
+
+📂 ansible/inventory/dev.yml
+all:
+  hosts:
+    router1:
+      ansible_host: 192.0.2.10
+    router2:
+      ansible_host: 192.0.2.11
+
+📂 ansible/group_vars/dev.yml
+env: dev
+latency_threshold: 120
+qos_profile: gold
+
+network_segments:
+  - name: core
+    cidr: 10.0.0.0/16
+  - name: edge
+    cidr: 10.1.0.0/16
+
+📂 catalog/NETWORK_SEGMENT.md
+# Network Segmentation Catalog
+
+Segments:
+- Core: Internal routing and backbone traffic
+- Edge: Ingress, probes, and external-facing services
+
+Segmentation enforces isolation and latency observability boundaries.
+
+📂 catalog/QOS_ROLLOUT.md
+# QoS Rollout Strategy
+
+Profiles:
+- bronze: best-effort
+- silver: business-critical
+- gold: latency-sensitive services
+
+QoS profiles are applied per segment and validated post-deployment.
+
+📂 catalog/LATENCY_PROBES.md
+# Latency Probes
+
+Probes are deployed at strategic ingress and egress points.
+Measurements feed percentile-based SLA evaluation pipelines.
+
+
+🔐 PROJECT 2 – FEDERAL MULTI-ENCLAVE INSIDER-THREAT & ANOMALY DETECTION SYSTEM
 Overview
 
 Enterprise-grade insider threat and anomaly detection platform designed for federal-style multi-enclave environments.
@@ -315,7 +600,7 @@ Compliance Mapping
 AC-3 AC-6 AU-2 IR-4 SC-7
 
 
-🛡️ PROJECT 2 – CSfC NETWORK OPERATIONS (TIER 2/3, PKI, STIG, IaC)
+🛡️ PROJECT 3 – CSfC NETWORK OPERATIONS (TIER 2/3, PKI, STIG, IaC)
 CSfC Network Operations Portfolio
 
 This public repository contains sanitized, representative samples of a CSfC-aligned Network Operations & Engineering Support Platform.
@@ -579,7 +864,7 @@ Corrective Actions
 Action	Owner	Due Date	Verification	Status
 
 
-🏥 PROJECT 3 – SECURE HEALTHCARE CLOUD DATA PLATFORM (IaC, AIRFLOW, IAM, DATA GOVERNANCE)
+🏥 PROJECT 4 – SECURE HEALTHCARE CLOUD DATA PLATFORM (IaC, AIRFLOW, IAM, DATA GOVERNANCE)
 
 This repository contains sanitized, representative examples of a secure cloud-native data platform. It demonstrates: - Infrastructure as Code (Terraform) - Production-grade Airflow pipelines with SLA handling - Least-privilege IAM design - Data masking and governance patterns - Containerized local development workflows ⚠️ No real credentials, datasets, or customer information are included. ## Architecture Overview - AWS-based infrastructure provisioned via Terraform - Apache Airflow orchestrating data pipelines - Security controls aligned with healthcare / regulated environments - Local development via Docker Compose ## Key Skills Demonstrated - Terraform (modular IaC) - Airflow DAG design & operations - Cloud security & compliance - DevOps best practices
 
