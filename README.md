@@ -13,6 +13,10 @@ All sensitive files and full production implementations are kept private in bolt
 The following engineering projects are presented in detail below:
 
 PROJECT 1 – Global Banking P95/P99 Latency Optimization Platform
+
+Live Demo https://global-banking-latency-dashboard.vercel.app
+
+
 (SLA-Driven Performance Engineering, Observability, Automation)
 
 PROJECT 2 - Federal Multi-Enclave Insider-Threat & Anomaly Detection System
