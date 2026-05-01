@@ -16,14 +16,18 @@ PROJECT 1 – Global Banking P95/P99 Latency Optimization Platform
 
 Live Demo https://global-banking-latency-dashboard.vercel.app
 
-
 (SLA-Driven Performance Engineering, Observability, Automation)
 
-PROJECT 2 - Federal Multi-Enclave Insider-Threat & Anomaly Detection System
+PROJECT 2 🚀 Real-Time Financial Risk & Customer Friction Optimization Platform
 
-PROJECT 3 - CSfC Network Operations Platform (Tier 2/3, PKI, STIG, IaC)
+🔗 Live Demo (Production):
+https://santander-financial-risk-dashboard-sigma.vercel.app
 
-PROJECT 4 - Secure Healthcare Cloud Data Platform (IaC, Airflow, IAM, Data Governance)
+PROJECT 3 - Federal Multi-Enclave Insider-Threat & Anomaly Detection System
+
+PROJECT 4 - CSfC Network Operations Platform (Tier 2/3, PKI, STIG, IaC)
+
+PROJECT 5 - Secure Healthcare Cloud Data Platform (IaC, Airflow, IAM, Data Governance)
 
 Each project demonstrates production-oriented design, security-first architecture, and disciplined automation practices.
 
@@ -309,7 +313,118 @@ Probes are deployed at strategic ingress and egress points.
 Measurements feed percentile-based SLA evaluation pipelines.
 
 
-🔐 PROJECT 2 – FEDERAL MULTI-ENCLAVE INSIDER-THREAT & ANOMALY DETECTION SYSTEM
+
+PROJECT 2
+🚀 Real-Time Financial Risk & Customer Friction Optimization Platform
+
+🔗 Live Demo (Production):
+https://santander-financial-risk-dashboard-sigma.vercel.app
+
+📊 Overview
+
+This project simulates a real-time banking risk intelligence platform designed to detect fraud, automate security decisions, and optimize customer experience simultaneously.
+
+Unlike traditional systems that prioritize either security or usability, this platform demonstrates a balanced, adaptive approach:
+
+⚖️ Maximize Low-Friction Transactions while preserving strong fraud protection
+
+🧠 Core Capabilities
+🔹 Customer Friction Score Breakdown
+Low Friction: 67 (56%)
+Medium Friction: 38 (32%)
+High Friction: 15 (13%)
+
+📌 Friction score measures the interruption experienced by customers during verification.
+The system dynamically minimizes friction without weakening risk controls.
+
+🔹 Adaptive Authentication Engine
+
+Risk-based decision system that automatically selects the optimal response:
+
+✅ Allow (No Friction) → Seamless approval
+🔄 Soft Verify → Lightweight confirmation
+⚠️ Step-Up MFA → Additional validation
+🚫 Hold / Block → High-risk containment
+🔹 Live Attack Simulation (SOC Scenario)
+
+Simulates a full fraud lifecycle:
+
+Suspicious Login
+Account Takeover Pattern
+Fraudulent Transaction Attempt
+Automated Secure Response
+Compliance Audit Trail
+
+📊 Live Risk Score: 87 / 100 (Critical)
+⚠️ Customer Friction Spike: 75 / 100
+
+🔹 Real-Time Observability Metrics
+False Positive Rate: 9%
+Secure Approvals: 72
+Friction Avoided: 89 events
+Avg Verification Time: 36s
+
+📌 Designed to reflect SRE-style monitoring (SLIs/SLOs mindset)
+
+🔹 Compliance & Audit Layer
+📜 PCI-DSS style logging
+🔐 GDPR-aligned privacy-safe evidence
+🧾 Immutable audit trail for security events
+🏗️ Architecture (Conceptual)
+User Transaction
+      ↓
+Risk Engine (Scoring + Anomaly Detection)
+      ↓
+Adaptive Auth Decision Layer
+      ↓
+[Allow | Verify | Step-Up | Block]
+      ↓
+Audit + Monitoring + Dashboard
+⚙️ Tech Stack
+Frontend: React + TypeScript (Vite)
+Deployment: Vercel (Global Edge Delivery)
+Backend (Simulated APIs): Node.js
+Concepts Applied:
+Risk scoring models
+Event-driven security decisions
+Observability metrics (P95/P99 mindset)
+DevSecOps principles
+🎯 Engineering Impact
+
+This project demonstrates:
+
+🔐 Security-first design with UX awareness
+⚡ Real-time decision systems under risk conditions
+📊 SRE-style monitoring and incident simulation
+🧠 Ability to model complex financial systems
+☁️ Cloud-ready, scalable frontend deployment
+💡 Key Insight
+
+Modern financial systems must reduce friction for legitimate users while escalating security only when necessary.
+This platform models how to achieve that balance at scale.
+
+🔭 Future Enhancements
+Integrate real ML anomaly detection models
+Deploy backend on AWS (Lambda / API Gateway)
+Add Kafka-style event streaming
+Implement real IAM + OAuth flows
+Introduce Terraform/CDK infrastructure
+👨‍💻 Author
+
+David Joseph
+🔗 GitHub: https://github.com/david8474
+
+⭐ Final Note
+
+This project reflects real-world banking scenarios, combining:
+
+Fraud detection
+Customer experience optimization
+Cloud-native thinking
+DevSecOps + SRE principles
+
+
+🔐 PROJECT 3 – FEDERAL MULTI-ENCLAVE INSIDER-THREAT & ANOMALY DETECTION SYSTEM
 Overview
 
 Enterprise-grade insider threat and anomaly detection platform designed for federal-style multi-enclave environments.
@@ -604,7 +719,7 @@ Compliance Mapping
 AC-3 AC-6 AU-2 IR-4 SC-7
 
 
-🛡️ PROJECT 3 – CSfC NETWORK OPERATIONS (TIER 2/3, PKI, STIG, IaC)
+🛡️ PROJECT 4 – CSfC NETWORK OPERATIONS (TIER 2/3, PKI, STIG, IaC)
 CSfC Network Operations Portfolio
 
 This public repository contains sanitized, representative samples of a CSfC-aligned Network Operations & Engineering Support Platform.
@@ -868,7 +983,7 @@ Corrective Actions
 Action	Owner	Due Date	Verification	Status
 
 
-🏥 PROJECT 4 – SECURE HEALTHCARE CLOUD DATA PLATFORM (IaC, AIRFLOW, IAM, DATA GOVERNANCE)
+🏥 PROJECT 5 – SECURE HEALTHCARE CLOUD DATA PLATFORM (IaC, AIRFLOW, IAM, DATA GOVERNANCE)
 
 This repository contains sanitized, representative examples of a secure cloud-native data platform. It demonstrates: - Infrastructure as Code (Terraform) - Production-grade Airflow pipelines with SLA handling - Least-privilege IAM design - Data masking and governance patterns - Containerized local development workflows ⚠️ No real credentials, datasets, or customer information are included. ## Architecture Overview - AWS-based infrastructure provisioned via Terraform - Apache Airflow orchestrating data pipelines - Security controls aligned with healthcare / regulated environments - Local development via Docker Compose ## Key Skills Demonstrated - Terraform (modular IaC) - Airflow DAG design & operations - Cloud security & compliance - DevOps best practices
 
