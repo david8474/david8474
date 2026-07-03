@@ -17,25 +17,15 @@ Live Demo https://global-banking-latency-dashboard.vercel.app
 
 (SLA-Driven Performance Engineering, Observability, Automation)
 
-# 🚀 PROJECT 2 — Enterprise Cloud-Native Payment Platform
+## 🚀 Project 2 — Enterprise Payment Platform
 
-## 📂 Full Source Code
+### 📂 Source Code
 
-### 👉 https://github.com/david8474/enterprise-payment-platform
+👉 https://github.com/david8474/enterprise-payment-platform
 
-> **Production-ready cloud-native payment platform built with Python FastAPI and Go microservices following Clean Architecture and SOLID principles.**
+Production-ready payment platform built with **FastAPI** and **Go** using **Clean Architecture** and **SOLID** principles.
 
-### ⚙️ Technologies
-
-- FastAPI (Python)
-- Go
-- PostgreSQL
-- Redis
-- JWT, OAuth2 & RBAC
-- Docker & Kubernetes
-- Helm
-- GitHub Actions CI/CD
-- Prometheus, Grafana & OpenTelemetry
+**⚙️ Stack:** FastAPI • Go • PostgreSQL • Redis • JWT • OAuth2 • RBAC • Docker • Kubernetes • Helm • GitHub Actions • Prometheus • Grafana • OpenTelemetry
 
 PROJECT 3 🚀 Real-Time Financial Risk & Customer Friction Optimization Platform
 
