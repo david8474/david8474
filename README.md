@@ -19,7 +19,9 @@ Live Demo https://global-banking-latency-dashboard.vercel.app
 
 (SLA-Driven Performance Engineering, Observability, Automation)
 
-## 🚀 Project 2 — Enterprise Payment Platform
+# 🚀 PROJECT 2
+
+# Enterprise Payment Platform
 
 ### 📂 Source Code
 
