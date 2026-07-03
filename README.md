@@ -27,7 +27,7 @@ Production-ready payment platform built with **FastAPI** and **Go** using **Clea
 
 **⚙️ Stack:** FastAPI • Go • PostgreSQL • Redis • JWT • OAuth2 • RBAC • Docker • Kubernetes • Helm • GitHub Actions • Prometheus • Grafana • OpenTelemetry
 
-PROJECT 3 🚀 Real-Time Financial Risk & Customer Friction Optimization Platform
+# 🚀 PROJECT 3 — Real-Time Financial Risk & Customer Friction Optimization Platform
 
 🔗 Live Demo (Production):
 https://santander-financial-risk-dashboard-sigma.vercel.app
