@@ -11,7 +11,9 @@ This portfolio highlights representative engineering projects. Sensitive files a
 
 The following engineering projects are presented in detail below:
 
-PROJECT 1 – Global Banking P95/P99 Latency Optimization Platform
+# 🚀 PROJECT 1
+
+# Global Banking P95/P99 Latency Optimization Platform
 
 Live Demo https://global-banking-latency-dashboard.vercel.app
 
