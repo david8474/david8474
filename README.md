@@ -1,12 +1,11 @@
 🚀 ENGINEERING PROJECT PORTFOLIO
+# David Joseph Rubio
 
-David Joseph Rubio
-Secure Architecture • Automation • Cloud • Networking • IaC
+### Secure Architecture • Cloud • Automation • Networking • IaC
 
-I emphasize strong security, validation, and multi-tool verification practices in every project — ensuring reliable, compliant, and production-ready infrastructure.
+Building secure, scalable, and production-ready cloud infrastructure and backend solutions.
 
-This portfolio contains representative samples of my engineering work across networking, cloud, automation, and Kubernetes environments.
-All sensitive files and full production implementations are kept private in bolt.new / Cursor / Codex for security reasons.
+This portfolio highlights representative engineering projects. Sensitive files and production implementations remain private for security.
 
 📌 PROJECTS COVERED IN THIS PORTFOLIO
 
