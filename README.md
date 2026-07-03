@@ -6,7 +6,7 @@ Secure Architecture • Automation • Cloud • Networking • IaC
 I emphasize strong security, validation, and multi-tool verification practices in every project — ensuring reliable, compliant, and production-ready infrastructure.
 
 This portfolio contains representative samples of my engineering work across networking, cloud, automation, and Kubernetes environments.
-All sensitive files and full production implementations are kept private in bolt.new / windsurf / Codex for security reasons.
+All sensitive files and full production implementations are kept private in bolt.new / Cursor / Codex for security reasons.
 
 📌 PROJECTS COVERED IN THIS PORTFOLIO
 
@@ -18,16 +18,36 @@ Live Demo https://global-banking-latency-dashboard.vercel.app
 
 (SLA-Driven Performance Engineering, Observability, Automation)
 
-PROJECT 2 🚀 Real-Time Financial Risk & Customer Friction Optimization Platform
+# 🚀 PROJECT 2 — Enterprise Cloud-Native Payment Platform
+
+## 📂 Full Source Code
+
+### 👉 https://github.com/david8474/enterprise-payment-platform
+
+> **Production-ready cloud-native payment platform built with Python FastAPI and Go microservices following Clean Architecture and SOLID principles.**
+
+### ⚙️ Technologies
+
+- FastAPI (Python)
+- Go
+- PostgreSQL
+- Redis
+- JWT, OAuth2 & RBAC
+- Docker & Kubernetes
+- Helm
+- GitHub Actions CI/CD
+- Prometheus, Grafana & OpenTelemetry
+
+PROJECT 3 🚀 Real-Time Financial Risk & Customer Friction Optimization Platform
 
 🔗 Live Demo (Production):
 https://santander-financial-risk-dashboard-sigma.vercel.app
 
-PROJECT 3 - Federal Multi-Enclave Insider-Threat & Anomaly Detection System
+PROJECT 4 - Federal Multi-Enclave Insider-Threat & Anomaly Detection System
 
-PROJECT 4 - CSfC Network Operations Platform (Tier 2/3, PKI, STIG, IaC)
+PROJECT 5 - CSfC Network Operations Platform (Tier 2/3, PKI, STIG, IaC)
 
-PROJECT 5 - Secure Healthcare Cloud Data Platform (IaC, Airflow, IAM, Data Governance)
+PROJECT 6 - Secure Healthcare Cloud Data Platform (IaC, Airflow, IAM, Data Governance)
 
 Each project demonstrates production-oriented design, security-first architecture, and disciplined automation practices.
 
@@ -314,7 +334,7 @@ Measurements feed percentile-based SLA evaluation pipelines.
 
 
 
-PROJECT 2
+PROJECT 3
 🚀 Real-Time Financial Risk & Customer Friction Optimization Platform
 
 🔗 Live Demo (Production):
@@ -424,7 +444,7 @@ Cloud-native thinking
 DevSecOps + SRE principles
 
 
-🔐 PROJECT 3 – FEDERAL MULTI-ENCLAVE INSIDER-THREAT & ANOMALY DETECTION SYSTEM
+🔐 PROJECT 4 – FEDERAL MULTI-ENCLAVE INSIDER-THREAT & ANOMALY DETECTION SYSTEM
 Overview
 
 Enterprise-grade insider threat and anomaly detection platform designed for federal-style multi-enclave environments.
@@ -719,7 +739,7 @@ Compliance Mapping
 AC-3 AC-6 AU-2 IR-4 SC-7
 
 
-🛡️ PROJECT 4 – CSfC NETWORK OPERATIONS (TIER 2/3, PKI, STIG, IaC)
+🛡️ PROJECT 5 – CSfC NETWORK OPERATIONS (TIER 2/3, PKI, STIG, IaC)
 CSfC Network Operations Portfolio
 
 This public repository contains sanitized, representative samples of a CSfC-aligned Network Operations & Engineering Support Platform.
@@ -983,7 +1003,7 @@ Corrective Actions
 Action	Owner	Due Date	Verification	Status
 
 
-🏥 PROJECT 5 – SECURE HEALTHCARE CLOUD DATA PLATFORM (IaC, AIRFLOW, IAM, DATA GOVERNANCE)
+🏥 PROJECT 6 – SECURE HEALTHCARE CLOUD DATA PLATFORM (IaC, AIRFLOW, IAM, DATA GOVERNANCE)
 
 This repository contains sanitized, representative examples of a secure cloud-native data platform. It demonstrates: - Infrastructure as Code (Terraform) - Production-grade Airflow pipelines with SLA handling - Least-privilege IAM design - Data masking and governance patterns - Containerized local development workflows ⚠️ No real credentials, datasets, or customer information are included. ## Architecture Overview - AWS-based infrastructure provisioned via Terraform - Apache Airflow orchestrating data pipelines - Security controls aligned with healthcare / regulated environments - Local development via Docker Compose ## Key Skills Demonstrated - Terraform (modular IaC) - Airflow DAG design & operations - Cloud security & compliance - DevOps best practices
 
