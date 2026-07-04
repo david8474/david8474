@@ -21,15 +21,17 @@ Live Demo https://global-banking-latency-dashboard.vercel.app
 
 # 🚀 PROJECT 2
 
-# Enterprise Payment Platform
+#  Microservices Payment Processing Platform
 
-### 📂 Source Code
+### 📂 Complete Source Code
 
 👉 https://github.com/david8474/enterprise-payment-platform
 
-Production-ready payment platform built with **FastAPI** and **Go** using **Clean Architecture** and **SOLID** principles.
+**FastAPI • Go • Clean Architecture • SOLID • PostgreSQL • Redis • JWT • OAuth2 • RBAC • Docker • Kubernetes • Helm • GitHub Actions • Prometheus • Grafana • OpenTelemetry**
 
-**⚙️ Stack:** FastAPI • Go • PostgreSQL • Redis • JWT • OAuth2 • RBAC • Docker • Kubernetes • Helm • GitHub Actions • Prometheus • Grafana • OpenTelemetry
+
+
+y
 
 # 🚀 PROJECT 3
 ## Real-Time Financial Risk & Customer Friction Optimization Platform
