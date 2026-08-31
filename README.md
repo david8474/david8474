@@ -11,17 +11,17 @@ This portfolio highlights representative engineering projects. Sensitive files a
 
 The following engineering projects are presented in detail below:
 
-# 🚀 PROJECT 1
 
-# Global Banking P95/P99 Latency Optimization Platform
+
+# 🚀 Global Banking P95/P99 Latency Optimization Platform
 
 Live Demo https://global-banking-latency-dashboard.vercel.app
 
 (SLA-Driven Performance Engineering, Observability, Automation)
 
-# 🚀 PROJECT 2
+ 
 
-## 🏆 Micro1 Frontier Engineering Challenge 2026
+## 🚀 🏆 Micro1 Frontier Engineering Challenge 2026
 
 # ⚡ LatencyGuard AI — Microservices & SRE Intelligence
 ### 📂 Complete Source Code
@@ -34,9 +34,9 @@ Analyzes **p95/p99 latency, CPU, memory, database latency, error rates, and requ
 
 **AI • Microservices • Cloud • SRE • Observability • p95/p99 Latency • Incident Analysis**
 
-# 🚀 PROJECT 3
 
-#  Microservices Payment Processing Platform
+
+# 🚀  Microservices Payment Processing Platform
 
 ### 📂 Complete Source Code
 
@@ -45,8 +45,8 @@ Analyzes **p95/p99 latency, CPU, memory, database latency, error rates, and requ
 **FastAPI • Go • Clean Architecture • SOLID • PostgreSQL • Redis • JWT • OAuth2 • RBAC • Docker • Kubernetes • Helm • GitHub Actions • Prometheus • Grafana • OpenTelemetry**
 
 
-# 🚀 PROJECT 4
-## Real-Time Financial Risk & Customer Friction Optimization Platform
+# 
+## 🚀 Real-Time Financial Risk & Customer Friction Optimization Platform
 
 🔗 Live Demo (Production):
 https://santander-financial-risk-dashboard-sigma.vercel.app
