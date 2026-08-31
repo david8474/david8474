@@ -19,17 +19,14 @@ Live Demo https://global-banking-latency-dashboard.vercel.app
 
 (SLA-Driven Performance Engineering, Observability, Automation)
 
-
-
-
- 
-
-
-
+<br>
+<br>
+<br>
 
 ## 🚀 🏆 Micro1 Frontier Engineering Challenge 2026
 
 # ⚡ LatencyGuard AI — Microservices & SRE Intelligence
+
 ### 📂 Complete Source Code
 
 👉 https://github.com/david8474/latencyguard-ai
@@ -40,9 +37,11 @@ Analyzes **p95/p99 latency, CPU, memory, database latency, error rates, and requ
 
 **AI • Microservices • Cloud • SRE • Observability • p95/p99 Latency • Incident Analysis**
 
+<br>
+<br>
+<br>
 
-
-# 🚀  Microservices Payment Processing Platform
+# 🚀 Microservices Payment Processing Platform
 
 ### 📂 Complete Source Code
 
@@ -50,8 +49,12 @@ Analyzes **p95/p99 latency, CPU, memory, database latency, error rates, and requ
 
 **FastAPI • Go • Clean Architecture • SOLID • PostgreSQL • Redis • JWT • OAuth2 • RBAC • Docker • Kubernetes • Helm • GitHub Actions • Prometheus • Grafana • OpenTelemetry**
 
+<br>
+<br>
+<br>
 
-# 
+## 🚀 Real-Time Financial Risk & Customer Friction Optimization Platform
+
 ## 🚀 Real-Time Financial Risk & Customer Friction Optimization Platform
 
 🔗 Live Demo (Production):
