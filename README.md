@@ -21,6 +21,21 @@ Live Demo https://global-banking-latency-dashboard.vercel.app
 
 # 🚀 PROJECT 2
 
+## 🏆 Micro1 Frontier Engineering Challenge 2026
+
+# ⚡ LatencyGuard AI — Microservices & SRE Intelligence
+### 📂 Complete Source Code
+
+👉 https://github.com/david8474/latencyguard-ai
+
+AI-powered cloud and SRE incident analysis platform designed to detect and diagnose service degradation across microservices.
+
+Analyzes **p95/p99 latency, CPU, memory, database latency, error rates, and request traffic** to identify potential root causes and provide actionable incident insights.
+
+**AI • Microservices • Cloud • SRE • Observability • p95/p99 Latency • Incident Analysis**
+
+# 🚀 PROJECT 3
+
 #  Microservices Payment Processing Platform
 
 ### 📂 Complete Source Code
@@ -30,22 +45,21 @@ Live Demo https://global-banking-latency-dashboard.vercel.app
 **FastAPI • Go • Clean Architecture • SOLID • PostgreSQL • Redis • JWT • OAuth2 • RBAC • Docker • Kubernetes • Helm • GitHub Actions • Prometheus • Grafana • OpenTelemetry**
 
 
-
-y
-
-# 🚀 PROJECT 3
+# 🚀 PROJECT 4
 ## Real-Time Financial Risk & Customer Friction Optimization Platform
 
 🔗 Live Demo (Production):
 https://santander-financial-risk-dashboard-sigma.vercel.app
 
-PROJECT 4 - Federal Multi-Enclave Insider-Threat & Anomaly Detection System
+PROJECT 5 - Federal Multi-Enclave Insider-Threat & Anomaly Detection System
 
-PROJECT 5 - CSfC Network Operations Platform (Tier 2/3, PKI, STIG, IaC)
+PROJECT 6 - CSfC Network Operations Platform (Tier 2/3, PKI, STIG, IaC)
 
-PROJECT 6 - Secure Healthcare Cloud Data Platform (IaC, Airflow, IAM, Data Governance)
+PROJECT 7 - Secure Healthcare Cloud Data Platform (IaC, Airflow, IAM, Data Governance)
 
 Each project demonstrates production-oriented design, security-first architecture, and disciplined automation practices.
+
+
 
 PROJECT 1 – Global Banking P95/P99 Latency Optimization Platform
 (SLA-Driven Performance Engineering, Observability, Automation)
@@ -330,7 +344,34 @@ Measurements feed percentile-based SLA evaluation pipelines.
 
 
 
-PROJECT 3
+# 🚀 PROJECT 2
+
+## 🏆 Micro1 Frontier Engineering Challenge 2026
+
+# ⚡ LatencyGuard AI — Microservices & SRE Intelligence
+### 📂 Complete Source Code
+
+👉 https://github.com/david8474/latencyguard-ai
+
+AI-powered cloud and SRE incident analysis platform designed to detect and diagnose service degradation across microservices.
+
+Analyzes **p95/p99 latency, CPU, memory, database latency, error rates, and request traffic** to identify potential root causes and provide actionable incident insights.
+
+
+
+# 🚀 PROJECT 3
+
+#  Microservices Payment Processing Platform
+
+### 📂 Complete Source Code
+
+👉 https://github.com/david8474/enterprise-payment-platform
+
+**FastAPI • Go • Clean Architecture • SOLID • PostgreSQL • Redis • JWT • OAuth2 • RBAC • Docker • Kubernetes • Helm • GitHub Actions • Prometheus • Grafana • OpenTelemetry**
+
+
+
+PROJECT 4
 🚀 Real-Time Financial Risk & Customer Friction Optimization Platform
 
 🔗 Live Demo (Production):
@@ -440,7 +481,7 @@ Cloud-native thinking
 DevSecOps + SRE principles
 
 
-🔐 PROJECT 4 – FEDERAL MULTI-ENCLAVE INSIDER-THREAT & ANOMALY DETECTION SYSTEM
+🔐 PROJECT 5 – FEDERAL MULTI-ENCLAVE INSIDER-THREAT & ANOMALY DETECTION SYSTEM
 Overview
 
 Enterprise-grade insider threat and anomaly detection platform designed for federal-style multi-enclave environments.
