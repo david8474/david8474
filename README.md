@@ -23,7 +23,7 @@ Live Demo https://global-banking-latency-dashboard.vercel.app
 <br>
 <br>
 
-## 🚀 🏆 Micro1 Frontier Engineering Challenge 2026
+# 🚀 🏆 Micro1 Frontier Engineering Challenge 2026
 
 # ⚡ LatencyGuard AI — Microservices & SRE Intelligence
 
